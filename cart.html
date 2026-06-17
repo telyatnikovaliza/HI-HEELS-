@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>HI, HEELS! CART</title> 
+        <link rel="stylesheet" href="styles/style3.css"> 
+    </head> 
+    <body>
+        <header class="header"> 
+            <div class="log1">
+                <img src="images/logoshort.svg" alt="Logo">
+            </div>
+            <nav class="text">
+                <a href="index.html" class="nav-link">главная</a>
+                <a href="about.html" class="nav-link">о нас</a>
+                <a href="wedo.html" class="nav-link active">услуги</a>
+                <a href="index.html#faq" class="nav-link">f.a.q.</a>
+                <a href="index.html#contacts" class="nav-link">контакты</a>
+            </nav>
+            <button class="burger">
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+
+        <div class="mobile-menu">
+            <button class="mobile-close-btn">✕</button>
+            <nav class="mobile-nav">
+                <a href="index.html" class="mobile-link">главная</a>
+                <a href="about.html" class="mobile-link">о нас</a>
+                <a href="wedo.html" class="mobile-link active">услуги</a>
+                <a href="index.html#faq" class="mobile-link">faq</a>
+                <a href="index.html#contacts" class="mobile-link">контакты</a>
+            </nav>
+        </div>
+
+        <div class="cart-page">
+            <div class="cart-container">
+                <div class="cart-header-row">
+                    <h1 class="cart-title">КОРЗИНА</h1>
+                    <a href="wedo.html" class="cart-close-btn">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18M6 6L18 18" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Тег "забрать из студии" на старом месте (под заголовком) -->
+                <div class="cart-delivery-section">
+                    <div class="delivery-tags">
+                        <label class="delivery-tag">
+                            <input type="radio" name="delivery" value="pickup" checked>
+                            <span class="tag-text">забрать из студии</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="cart-empty" id="cartEmpty">
+                    <div class="cart-empty-icon">🛒</div>
+                    <p>Ваша корзина пуста</p>
+                    <a href="wedo.html" class="btn-cart-shop">Перейти к покупкам</a>
+                </div>
+
+                <div class="cart-grid" id="cartItems" style="display: none;">
+                    <div class="cart-products">
+                        <div id="cartItemsList"></div>
+                    </div>
+
+                    <div class="cart-summary">
+                        <h3 class="summary-title">ИТОГО</h3>
+                        
+                        <div class="summary-promo">
+                            <input type="text" placeholder="Промокод" id="promoCode">
+                            <button class="promo-apply-btn">Применить</button>
+                        </div>
+                        
+                        <div class="summary-items-total">
+                            <span>Стоимость товаров</span>
+                            <span id="cartTotal">0 ₽</span>
+                        </div>
+                        
+                        <div class="summary-total">
+                            <span>К оплате</span>
+                            <span id="cartFinalTotal">0 ₽</span>
+                        </div>
+                        
+                        <button class="btn-pay" id="checkoutBtn">Оформить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="wedoSuccess">
+            <div class="wedo-success-box">
+                <h2>Спасибо за покупку!</h2>
+                <p>Оплатить заказ можно будет в студии по адресу: наб. Реки Карповки, 16, корп. 2</p>
+                <button id="closeSuccess" class="btn-pay" style="margin-top:20px;">
+                    Закрыть
+                </button>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="ff">
+                    <div class="leftfoot">
+                        <div class="footer-nav">
+                            <a href="index.html">главная</a>
+                            <a href="about.html">о нас</a>
+                            <a href="wedo.html" class="active">услуги</a>
+                            <a href="index.html#faq">f.a.q.</a>
+                            <a href="index.html#contacts" class="nav-link">контакты</a>
+                        </div>
+                        <div class="polit">Политика конфиденциальности</div>
+                    </div>
+                    <div class="foot">
+                        <a>Социальные сети</a>
+                        <div class="socials">
+                            <a href="https://t.me/yourname" target="_blank" class="social-circle">
+                                <img src="images/tg.svg" alt="Telegram">
+                            </a>
+                            <a href="https://vk.com/yourname" target="_blank" class="social-circle">
+                                <img src="images/vk.svg" alt="VK">
+                            </a>
+                            <a href="https://wa.me/79999999999" target="_blank" class="social-circle">
+                                <img src="images/wh.svg" alt="WhatsApp">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="fff">
+                    <div class="lgbg">
+                        <img src="images/logogr.svg" alt="logo">
+                    </div>
+                    <div class="lgtxt">© 2026 All rights reserved</div>
+                </div>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
